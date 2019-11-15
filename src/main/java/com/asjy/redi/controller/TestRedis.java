@@ -59,7 +59,7 @@ public class TestRedis {
     @RequestMapping("getRed")
     public Object getRed(String id){
         System.out.println(redisUtil.get(id));
-        System.out.println("哈哈哈哈哈哈");
+        System.out.println("哈哈哈哈哈哈111");
         return redisUtil.get(id);
     }
 }
