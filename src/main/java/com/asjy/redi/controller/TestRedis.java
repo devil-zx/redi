@@ -57,8 +57,9 @@ public class TestRedis {
     }
 
     @RequestMapping("getRed")
-    public String getRed(String id){
-        UserEntity userEntity = testSe.find(id);
-        return userEntity.getName();
+    public Object getRed(String id){
+        System.out.println(redisUtil.get(id));
+        System.out.println("哈哈哈哈哈哈");
+        return redisUtil.get(id);
     }
 }
